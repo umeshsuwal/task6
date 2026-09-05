@@ -1,8 +1,9 @@
+const path = require('path');
 const { Worker } = require('worker_threads');
 
 const start = Date.now();
 
-const worker = new Worker('./heavy-task.js');
+const worker = new Worker(path.join(__dirname, 'heavy-task.js'));
 
 worker.on('message', (result) => {
   console.log(`Result from worker: ${result} (took ${Date.now() - start}ms)`);
