@@ -1,0 +1,5 @@
+{
+  "name": "my-workspace",
+  "private": true,
+  "workspaces": ["packages/*"]
+}

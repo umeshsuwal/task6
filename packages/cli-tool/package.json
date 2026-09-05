@@ -1,0 +1,8 @@
+{
+  "name": "@myworkspace/cli-tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@myworkspace/math-utils": "^1.0.0"
+  }
+}
